@@ -80,7 +80,7 @@ using (var connection = new SqlConnection(connectionString))
 
     using (var bulkCopy = new SqlBulkCopy(connection))
     {
-        bulkCopy.DestinationTableName = "Trips2";
+        bulkCopy.DestinationTableName = "Trips";
 
         bulkCopy.ColumnMappings.Add("tpep_pickup_datetime", "tpep_pickup_datetime");
         bulkCopy.ColumnMappings.Add("tpep_dropoff_datetime", "tpep_dropoff_datetime");
